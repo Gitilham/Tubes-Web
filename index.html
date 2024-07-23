@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handayani ac.id</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+   
+</head>
+<body>
+
+    <nav>
+        <a href="#home" onclick="showSection('home')">Home Page</a>
+        <a href="#about" onclick="showSection('about')">About</a>
+        <a href="#dapartments" onclick="showSection('dapartments')">Dapartments</a>
+        <a href="#gallery" onclick="showSection('gallery')">Gallery</a>
+        <a href="#contact" onclick="showSection('contact')">Contact</a>
+    </nav>
+
+    <div class="content">
+        <section id="home" class="active">
+            <h2>Home Page</h2>
+            <p>Selamat datang di halaman utama.</p>
+        </section>
+        <section id="about">
+            <h2>About</h2>
+            <p>Informasi tentang kami.</p>
+        </section>
+        <section id="dapartments">
+            <h2>Dapartments</h2>
+            <p>Detail tentang apartemen yang tersedia.</p>
+        </section>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <p>Koleksi gambar kami.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Informasi kontak kami.</p>
+        </section>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            // Menyembunyikan semua section
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            // Menampilkan section yang dipilih
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
