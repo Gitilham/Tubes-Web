@@ -20,8 +20,40 @@
 
     <div class="content">
         <section id="home" class="active">
-            <h2>Home Page</h2>
-            <p>Selamat datang di halaman utama.</p>
+             <header>
+        <p>Selamat datang di Profil Universitas Handayani Makassar.</p>
+    </header>
+<div class="slideshow-container">
+    <div class="mySlides fade">
+        <img src="foto home page.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="2.jpg" style="width:100%">
+    </div>
+
+    <div class="text">
+        <p>Universitas Handayani Makassar adalah Lembaga Pendidikan Tinggi di Kopertis Wil. IX yang didirikan pada tahun 1996. Sejak tahun 2013 menyelenggarakan program Magister Komputer (M.Kom) yang pertama di Indonesia Timur.</p>
+    </div>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    slides[slideIndex-1].style.display = "block";  
+    setTimeout(showSlides, 4000); 
+}
+</script>
+            
         </section>
         <section id="about">
             <h2>About</h2>
