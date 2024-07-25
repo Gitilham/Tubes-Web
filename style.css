@@ -27,13 +27,63 @@
             color: black;
         }
         .content {
-            margin-top: 60px; /* Space for fixed navbar */
+            margin-top: 60px;
             padding: 20px;
         }
         section {
-            display: none; /* Awalnya disembunyikan */
+            display: none; 
         }
         section.active {
-            display: block; /* Menampilkan konten aktif */
+            display: block; 
         }
+/* css untuk tampilan home page  */
+
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+header {
+    color: red;
+    font-size: 35px;
+    text-align: center;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.text {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
    
